@@ -1,5 +1,8 @@
-
-if (alarm[0] == -1){
+if (shootCooldownTick == timer){
 	show_debug_message("time got");
-	var newBullet = instance_create_layer(x-100, y, "Instances", oBullets);
+	var newBullet = instance_create_layer(self.x, self.y, "Instances", oBullets);
+	timer = 0
+}else{
+	timer++
 }
+

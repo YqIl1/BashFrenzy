@@ -1,3 +1,3 @@
 
-direction = irandom_range(0,360);
+direction = irandom_range(90,270);
 speed = 10;

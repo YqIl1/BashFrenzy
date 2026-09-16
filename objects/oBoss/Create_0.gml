@@ -1,4 +1,5 @@
 
-alarm_set(0, 60);
 //wait time for shooting
-shootCooldown = 5
+shootCooldown = 0.5
+shootCooldownTick = shootCooldown * 60
+timer = 0
