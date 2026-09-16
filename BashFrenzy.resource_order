@@ -1,0 +1,8 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"oBat","order":1,"path":"objects/oBat/oBat.yy",},
+    {"name":"sbatAnimation","order":1,"path":"sprites/sbatAnimation/sbatAnimation.yy",},
+    {"name":"sTurret","order":3,"path":"sprites/sTurret/sTurret.yy",},
+  ],
+}
