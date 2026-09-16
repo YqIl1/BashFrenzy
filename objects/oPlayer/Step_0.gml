@@ -15,7 +15,7 @@ function isRight(){
 	return 	keyboard_check(ord("D")) || keyboard_check(vk_right);
 }
 
-if(isUp()){
+if(isUp() && !isDashing){
 	direction = 90;
 	if(isLeft()) 
 		direction = 135;
@@ -24,7 +24,7 @@ if(isUp()){
 	speed = playerSpeed;
 }
 
-if(isLeft()){
+if(isLeft() && !isDashing){
 	direction = 180; 
 	if(isUp())
 		direction = 135;
@@ -33,7 +33,7 @@ if(isLeft()){
 	speed = playerSpeed;
 }
 
-if(isDown()){
+if(isDown() && !isDashing){
 	direction = 270;
 		if(isLeft()) 
 		direction = 225;
@@ -42,7 +42,7 @@ if(isDown()){
 	speed = playerSpeed;
 }
 
-if(isRight()){
+if(isRight() && !isDashing){
 	direction = 0;
 		if(isUp())
 		direction = 45;
@@ -52,6 +52,25 @@ if(isRight()){
 }
 
 //Stopping player movement
-if((keyboard_check_released(ord("W")) || keyboard_check_released(vk_up) || keyboard_check_released(ord("A")) || keyboard_check_released(vk_left) || keyboard_check_released(ord("S")) || keyboard_check_released(vk_down) || keyboard_check_released(ord("D")) || keyboard_check_released(vk_right))){
+if((keyboard_check_released(ord("W")) || keyboard_check_released(vk_up) || keyboard_check_released(ord("A")) || keyboard_check_released(vk_left) || keyboard_check_released(ord("S")) || keyboard_check_released(vk_down) || keyboard_check_released(ord("D")) || keyboard_check_released(vk_right)) && !isDashing){
 	speed = 0;
 }
+
+//Parry
+if(keyboard_check(ord("X")) || keyboard_check(ord("K"))){
+	if(!isDashing) timer = 20;
+	isDashing = true;
+	speed = playerSpeed * 2.5;
+	show_debug_message(timer);
+}
+
+if(isDashing && timer < 15){
+	speed = 0;
+}
+
+if(isDashing && timer < 0) isDashing = false;
+
+if(timer >= 0){
+	timer--;
+}
+
