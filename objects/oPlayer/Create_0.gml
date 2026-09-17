@@ -1,8 +1,9 @@
 //This is when the player is spawed
 
 //use variable defintions
-playerSpeed = 10;
+playerSpeed = 5;
 isDashing = false;
+isParrying = false;
 timer = 0;
 
 
