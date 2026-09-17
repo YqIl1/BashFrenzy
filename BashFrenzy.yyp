@@ -38,6 +38,7 @@
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sPlayerPlaceholder","path":"sprites/sPlayerPlaceholder/sPlayerPlaceholder.yy",},},
+    {"id":{"name":"sPlayerSwing","path":"sprites/sPlayerSwing/sPlayerSwing.yy",},},
     {"id":{"name":"sSpikes","path":"sprites/sSpikes/sSpikes.yy",},},
     {"id":{"name":"sTurret","path":"sprites/sTurret/sTurret.yy",},},
   ],

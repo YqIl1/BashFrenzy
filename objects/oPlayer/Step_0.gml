@@ -130,11 +130,24 @@ if((keyboard_check(ord("Z")) || keyboard_check(ord("L"))) && !isDashing && !isPa
 	parry.visible = true;
 	timer = parryTimerMax;
 	isParrying = true;
+	image_index = 0;
 }
+
+
+
+//animation playback control
+if (image_index >= image_number - 1){
+	image_speed = 0;
+	//lock on the last frame
+	image_index = image_number - 1;
+}
+	
 
 //contains all relevant timers for parry window
 if (isParrying)
 {
+	sprite_index = sPlayerSwing;
+	image_speed = 1;
 	if(isParrying && timer < parryTimerMax)
 	{
 		parry.visible = false;
@@ -142,6 +155,7 @@ if (isParrying)
 
 	if(isParrying && timer < 0){
 		isParrying = false;
+		sprite_index = sPlayer;
 	}
 
 	if(isParrying && timer > parryTimerMax){
@@ -150,7 +164,7 @@ if (isParrying)
 	}
 }
 
-
+image_angle = direction +90;
 //Death code
 if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBullets))
 {
@@ -165,3 +179,4 @@ function death()
 		room_restart();
 	}
 }
+
