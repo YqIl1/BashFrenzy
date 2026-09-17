@@ -15,3 +15,15 @@ if (shootCooldownTick == timer){
 	timer++
 }
 
+
+var _borader = instance_nearest(x,y,oSpikes)
+if(distance_to_object(_borader)< 30){
+	direction = point_direction(_borader.x, _borader.y, x,y);
+}
+if (directionChangeCooldownTick == timerM){
+	direction += irandom_range(-15,15);
+	timerM = 0
+}else{
+	timerM++
+}
+
