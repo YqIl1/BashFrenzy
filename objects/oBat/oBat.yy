@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"oBat",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oBat",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBatIdle",
-    "path":"sprites/sBatIdle/sBatIdle.yy",
+    "name":"sbatAnimation",
+    "path":"sprites/sbatAnimation/sbatAnimation.yy",
   },
   "spriteMaskId":null,
   "visible":true,
