@@ -1,6 +1,19 @@
 //This is where the majority of code will be
 //this runs every frame
 
+/*
+
+
+Set the invincible boolean to true in the variable defintions
+if you want to test the game without dying
+
+
+
+
+*/
+
+
+
 //Player Movement
 function isUp(){
 	return 	keyboard_check(ord("W")) || keyboard_check(vk_up);
@@ -110,3 +123,24 @@ if(isParrying && timer > 60){
 	parry.direction = direction
 }
 
+
+//Death code
+if(place_meeting(x, y, oSpikes))
+{
+	death();
+}
+if(place_meeting(x, y, oBullets))
+{
+	death()
+}
+
+
+
+function death()
+{
+	if(!invincible)
+	{
+		//put death animations and other things here
+		room_restart();
+	}
+}
