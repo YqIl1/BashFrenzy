@@ -2,14 +2,18 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"oBat","order":1,"path":"objects/oBat/oBat.yy",},
+    {"name":"oBossTurret","order":2,"path":"objects/oBossTurret/oBossTurret.yy",},
+    {"name":"oTorpedo","order":3,"path":"objects/oTorpedo/oTorpedo.yy",},
     {"name":"sBackground","order":3,"path":"sprites/sBackground/sBackground.yy",},
     {"name":"sbatAnimation","order":6,"path":"sprites/sbatAnimation/sbatAnimation.yy",},
     {"name":"sBatIdle","order":4,"path":"sprites/sBatIdle/sBatIdle.yy",},
     {"name":"sBoss","order":5,"path":"sprites/sBoss/sBoss.yy",},
     {"name":"sBullet","order":2,"path":"sprites/sBullet/sBullet.yy",},
+    {"name":"sExplosion","order":11,"path":"sprites/sExplosion/sExplosion.yy",},
     {"name":"sPlayer","order":9,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"sPlayerSwing","order":8,"path":"sprites/sPlayerSwing/sPlayerSwing.yy",},
     {"name":"sSpikes","order":1,"path":"sprites/sSpikes/sSpikes.yy",},
+    {"name":"sTorpedo","order":10,"path":"sprites/sTorpedo/sTorpedo.yy",},
     {"name":"sTurret","order":7,"path":"sprites/sTurret/sTurret.yy",},
   ],
 }

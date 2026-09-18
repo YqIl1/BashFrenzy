@@ -144,7 +144,7 @@ if (image_index >= image_number - 1){
 	
 
 //contains all relevant timers for parry window
-if (isParrying)
+if(isParrying)
 {
 	sprite_index = sPlayerSwing;
 	image_speed = 1;

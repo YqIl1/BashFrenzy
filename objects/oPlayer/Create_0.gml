@@ -1,7 +1,7 @@
 //This is when the player is spawed
 
 //use variable defintions
-playerSpeed = 5;
+playerSpeed = 4;
 isDashing = false;
 isParrying = false;
 image_speed = 1;
