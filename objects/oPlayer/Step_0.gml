@@ -12,7 +12,8 @@ if you want to test the game without dying
 
 */
 
-
+//Face mouse
+toMouseDirection = point_direction(x,y,mouse_x,mouse_y);
 
 //Player Movement
 function isUp(){
@@ -69,8 +70,8 @@ if((keyboard_check_released(ord("W")) || keyboard_check_released(vk_up) || keybo
 	speed = 0;
 }
 
-//Parry
-if((keyboard_check(ord("X")) || keyboard_check(ord("K"))) && !isParrying){
+//Dash
+if((keyboard_check(ord("X")) || keyboard_check(ord("K"))|| mouse_check_button(mb_right)) && !isParrying){
 	if(!isDashing) timer = 15;
 	isDashing = true;
 	speed = playerSpeed * 2.5;
@@ -97,20 +98,20 @@ function displacement()
 {
 	var h = 0.0, v = 0.0;
 	//show_debug_message(direction);
-	if(direction == 0 || direction == 45 || direction == 315)
+	if(toMouseDirection == 0 || toMouseDirection == 45 || toMouseDirection == 315)
 	{
 		h = 1;
 	}
-	else if(direction == 135 || direction == 180 || direction == 215)
+	else if(toMouseDirection == 135 || toMouseDirection == 180 || toMouseDirection == 215)
 	{
 		h = -1;
 	}
 
-	if(direction == 45 || direction == 90 || direction == 135) 
+	if(toMouseDirection == 45 || toMouseDirection == 90 || toMouseDirection == 135) 
 	{
 		v = -1;
 	}
-	else if(direction == 215 || direction == 270 || direction == 315)
+	else if(toMouseDirection == 215 || toMouseDirection == 270 || toMouseDirection == 315)
 	{
 		v = 1;
 	}
@@ -123,7 +124,7 @@ function displacement()
 	return [h,v];
 }
 //Changed timer to equal parryTimerMax in order to make it easier to edit the time interval
-if((keyboard_check(ord("Z")) || keyboard_check(ord("L"))) && !isDashing && !isParrying)
+if((keyboard_check(ord("Z")) || keyboard_check(ord("L"))|| mouse_check_button(mb_left)) && !isDashing && !isParrying)
 {
 	parry.x = x + displacement()[0] * 50;
 	parry.y = y + displacement()[1] * 50;
@@ -148,7 +149,7 @@ if(isParrying)
 {
 	sprite_index = sPlayerSwing;
 	image_speed = 1;
-	if(isParrying && timer < parryTimerMax)
+	if(isParrying && timer < parryTimerMax-5)
 	{
 		parry.visible = false;
 	}
@@ -160,11 +161,11 @@ if(isParrying)
 
 	if(isParrying && timer > parryTimerMax){
 		parry.speed = speed;
-		parry.direction = direction
+		parry.direction = toMouseDirection
 	}
 }
 
-image_angle = direction +90;
+image_angle = toMouseDirection+90;
 //Death code
 if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBullets))
 {

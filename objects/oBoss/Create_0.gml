@@ -9,3 +9,5 @@ timerM = 0
 bossSpeed = 3;
 direction = 11;
 speed = bossSpeed;
+hp = 100;
+hp_max = 100;

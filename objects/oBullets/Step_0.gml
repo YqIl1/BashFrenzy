@@ -17,3 +17,9 @@ if(oPlayer.isParrying && canDamagePlayer)
 		canDamagePlayer = false;
 	}
 }
+
+if(place_meeting(x, y, oBoss)&&canDamagePlayer == false)
+{
+	oBoss.hp--;
+	instance_destroy(self);
+}
