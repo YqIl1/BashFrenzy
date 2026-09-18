@@ -10,6 +10,7 @@ if(oPlayer.isParrying && canDamagePlayer)
 {
 	if(place_meeting(x, y, oBat) && oBat.visible)
 	{
+		direction = point_direction(x, y, oPlayer.x, oPlayer.y);
 		image_angle= direction + 180;
 		image_xscale *= -1;
 		speed *= -1;
