@@ -12,6 +12,10 @@ if you want to test the game without dying
 
 */
 
+
+x = clamp(x, 0, room_width); 
+y = clamp(y, 0, room_height); 
+
 //Face mouse
 toMouseDirection = point_direction(x,y,mouse_x,mouse_y);
 
@@ -74,16 +78,18 @@ if((keyboard_check_released(ord("W")) || keyboard_check_released(vk_up) || keybo
 if((keyboard_check(ord("X")) || keyboard_check(ord("K"))|| mouse_check_button(mb_right)) && !isParrying){
 	if(!isDashing) timer = 15;
 	isDashing = true;
+	invincible = true;
 	speed = playerSpeed * 2.5;
 }
 
-if(isDashing && timer < 10)
+if(isDashing && timer < 3)
 {
 	speed = 0;
 }
 
 if(isDashing && timer < 0)
 {
+	invincible = false;
 	isDashing = false;
 }
 
