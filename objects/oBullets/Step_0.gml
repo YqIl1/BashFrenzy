@@ -21,7 +21,7 @@ if(oPlayer.isParrying && canDamagePlayer)
 
 if(place_meeting(x, y, oBoss)&&canDamagePlayer == false)
 {
-	audio_play_sound(TankHitSound, 8, 0.6);
+	audio_play_sound(TankHitSound, 8, 0, 0.6);
 	oBoss.hp--;
 	instance_destroy(self);
 	
