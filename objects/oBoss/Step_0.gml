@@ -34,6 +34,10 @@ function move(){
 
 function charge(d){
 	if (timerC < -10){
+		if ChargeSoundPlay == true{
+			audio_play_sound(ChargeSound1, 6, false, 0.8);
+			ChargeSoundPlay = false;
+		}
 		speed = 1;
 		direction = irandom_range(0,360);
 		directionToTarget = point_direction(x,y,d.x,d.y)
@@ -41,11 +45,11 @@ function charge(d){
 		speed = bossSpeed*10;
 		direction = directionToTarget;
 		traveledDistance += speed;
-		
+		ChargeSoundPlay = true;
 	}
 }
 
-
+	
 
 
 x = clamp(x, 64, room_width-64); 
@@ -56,6 +60,7 @@ if ((shootCooldownTick == timer)){
 		shoot(_direction)
 		shoot(_direction-45)
 		shoot(_direction+45)
+			audio_play_sound(FireSound, 8, false, 0.2);
 	timer = 0
 	}
 }else{

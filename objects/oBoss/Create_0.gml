@@ -24,3 +24,6 @@ chargeCooldownTick = chargeCooldown * 60;
 timerC = 0;
 traveledDistance = 0;
 directionToTarget = 0;
+
+//sound timer
+ChargeSoundPlay = true;
