@@ -61,6 +61,12 @@ function charge(d){
 	}
 }
 
+//victory place, boss death
+function death(){
+	//have animation and stuff
+	room_goto(VictoryScreen)
+}
+
 	
 
 
@@ -117,6 +123,8 @@ if(timerC > 0){
 	canShoot = false;
 	charge(_player);
 }
+
+
 
 
 

@@ -186,7 +186,8 @@ function death()
 	if(!invincible)
 	{
 		//put death animations and other things here
-		room_restart();
+		audio_stop_all()
+		room_goto(EndingScreen)
 	}
 }
 

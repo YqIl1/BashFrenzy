@@ -107,8 +107,6 @@
     {"name":"inst_26C90D5E","path":"rooms/MainRoom/MainRoom.yy",},
     {"name":"inst_2089D083","path":"rooms/MainRoom/MainRoom.yy",},
     {"name":"inst_2A801AFF","path":"rooms/MainRoom/MainRoom.yy",},
-    {"name":"inst_644B4E8","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_5BF5B427","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
