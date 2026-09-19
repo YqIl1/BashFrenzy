@@ -17,7 +17,7 @@ function avoidSpike(){
 	var borader = instance_nearest(x,y,oSpikes)
 	if(distance_to_object(borader)< 30){
 		direction = point_direction(borader.x, borader.y, x,y);
-		show_debug_message(direction)
+		//show_debug_message(direction)
 	}
 }
 

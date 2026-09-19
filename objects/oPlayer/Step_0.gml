@@ -174,10 +174,12 @@ if(isParrying)
 
 image_angle = toMouseDirection+90;
 //Death code
-if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBullets))
+if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBullets) || place_meeting(x, y, oBoss))
 {
+	show_debug_message("ahh")
 	death();
 }
+
 
 function death()
 {
