@@ -4,6 +4,7 @@ shootCooldown = 0.5;
 shootCooldownTick = shootCooldown * 60;
 timer = 0;
 canShoot = true;
+torpedoCharge = 0;
 
 //movement related
 directionChangeCooldown = 2;

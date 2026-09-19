@@ -2,16 +2,26 @@
 var _player = instance_nearest(x,y,oPlayer)
 var _direction = point_direction(x, y, _player.x, _player.y)
 
-function shoot(angle){
-	var newBullet = instance_create_layer(self.x, self.y, "Instances", oBullets);
+function shoot(angle, ammo){
+	switch (ammo){
+		case "bullet":
+			var newBullet = instance_create_layer(self.x, self.y, "Instances", oBullets);
+			break;
+		case "torpedo":
+			var newBullet = instance_create_layer(self.x, self.y, "Instances", oTorpedo);
+			break;
+		default:
+			var newBullet = instance_create_layer(self.x, self.y, "Instances", oBullets);
+			show_debug_message("unknown type")
+			break;
+	}		
 	newBullet.direction=angle
 }
 
 
-function hurt(source){
-}
-	
-	
+
+
+
 
 function avoidSpike(){
 	var borader = instance_nearest(x,y,oSpikes)
@@ -40,7 +50,9 @@ function charge(d){
 		}
 		speed = 1;
 		direction = irandom_range(0,360);
-		directionToTarget = point_direction(x,y,d.x,d.y)
+		if(timerC < -30){
+			directionToTarget = point_direction(x,y,d.x,d.y);
+		}
 	}else{
 		speed = bossSpeed*10;
 		direction = directionToTarget;
@@ -57,14 +69,26 @@ y = clamp(y, 64, room_height-64);
 //shoot
 if ((shootCooldownTick == timer)){
 	if(canShoot){
-		shoot(_direction)
-		shoot(_direction-45)
-		shoot(_direction+45)
-			audio_play_sound(FireSound, 8, false, 0.2);
-	timer = 0
+		shoot(_direction, "bullet")
+		shoot(_direction-45, "bullet")
+		shoot(_direction+45, "bullet")
+		audio_play_sound(FireSound, 8, false, 0.2);
+		timer = 0
+		if(torpedoCharge == 2){
+			shoot(_direction, "torpedo");
+			torpedoCharge = 0;
+		}else{
+			torpedoCharge++;
+		}
 	}
 }else{
 	timer++
+}
+
+
+//damage detect
+if(hp == 0){
+	death();
 }
 
 
@@ -80,7 +104,7 @@ if(place_meeting(x, y, oSpikes))
 
 if(chargeCooldownTick == timerC ){
 	traveledDistance = 0;
-	timerC = -60;
+	timerC = -90;
 }else{
 	timerC++
 }
@@ -93,6 +117,8 @@ if(timerC > 0){
 	canShoot = false;
 	charge(_player);
 }
+
+
 
 
 

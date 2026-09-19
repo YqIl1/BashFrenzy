@@ -15,7 +15,7 @@ if(oPlayer.isParrying && canDamagePlayer)
 		image_xscale *= -1;
 		speed *= -1;
 		canDamagePlayer = false;
-			audio_play_sound(ParrySound, 8, false, 0.8);
+		audio_play_sound(ParrySound, 8, false, 0.8);
 	}
 }
 
