@@ -138,6 +138,7 @@ if((keyboard_check(ord("Z")) || keyboard_check(ord("L"))|| mouse_check_button(mb
 	timer = parryTimerMax;
 	isParrying = true;
 	image_index = 0;
+	audio_play_sound(SlashSound, 8, false, 0.8);
 }
 
 
