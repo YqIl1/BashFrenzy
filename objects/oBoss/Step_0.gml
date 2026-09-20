@@ -115,9 +115,14 @@ if ((shootCooldownTick == timer)){
 	timer++
 }
 
-
+image_speed = 0;
 //damage detect
-if(hp <= 0){
+if(hp  <= hp_max * 0.5)
+{
+	image_index = 1;
+}
+if(hp <= 0)
+{
 	death();
 }
 
@@ -155,11 +160,14 @@ if(timerC > 0){
 }else{
 	speed = 0;
 	
-	if(timerE > 0){
+	if(timerE > 0)
+	{
 		var e = instance_create_layer(irandom_range(bbox_left,bbox_right), irandom_range(bbox_top,bbox_bottom), "Instances", oExplosion);
 		e.depth -= 1000;
-	}else{
-
+	}
+	else
+	{
+		room_goto(VictoryScreen);
 	}
 	
 }
@@ -171,7 +179,7 @@ function death(){
 	dead = true;
 
 	
-	//room_goto(VictoryScreen)
+	
 }
 
 if(timerE >= 0) timerE--;
