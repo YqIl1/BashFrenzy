@@ -198,7 +198,7 @@ if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBoss) ||  place_meeting(
 {
 	//show_debug_message("ahh")
 	if(!invincible){
-		hp --;
+		hp = place_meeting(x, y, oTorpedo)? hp - 3: hp - 1; 
 		timerI = 45;
 		invincible = true;
 	}
@@ -208,7 +208,7 @@ if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBoss) ||  place_meeting(
 
 function death()
 {
-	if(hp == 0)
+	if(hp <= 0)
 	{
 		//put death animations and other things here
 		audio_stop_all()
