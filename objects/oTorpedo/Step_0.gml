@@ -23,7 +23,6 @@ if(exploding == false)
 		if(place_meeting(x, y, oBat) && oBat.visible)
 		{
 			direction = point_direction(oPlayer.x, oPlayer.y, x, y);
-			image_angle= direction + 180;
 			canDamagePlayer = false;
 		
 		}
@@ -39,7 +38,7 @@ else
 }
 
 timer++;
-if (timer>=30 && !exploding)
+if (timer>=30 && !exploding && canDamagePlayer)
 {
 	direction = point_direction(x,y,oPlayer.x,oPlayer.y);
 	timer = 0;
