@@ -77,12 +77,6 @@ function charge(d){
 }
 
 //victory place, boss death
-function death(){
-	//have animation and stuff
-	room_goto(VictoryScreen)
-	audio_play_sound(YaySound, 10, false, 2);
-	audio_play_sound(TankExplosionSound, 8, false);
-}
 	
 
 
@@ -175,8 +169,12 @@ if(timerC > 0){
 //victory place, boss death
 function death(){
 	//have animation and stuff
+	audio_play_sound(TankDeathSound, 8, false);
 	timerE = 180;
 	dead = true;
+	room_goto(VictoryScreen)
+	audio_play_sound(YaySound, 10, false, 2);
+
 
 	
 	//room_goto(VictoryScreen)
