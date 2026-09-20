@@ -16,9 +16,6 @@ bossSpeed = 2;
 direction = 11;
 speed = bossSpeed;
 
-//health
-hp = 100;
-hp_max = 100;
 
 //charge timer
 chargeCooldown = 5;
@@ -29,3 +26,27 @@ directionToTarget = 0;
 
 //sound timer
 ChargeSoundPlay = true;
+
+
+switch(global.difficulty){
+	case 1:
+		hp_max = 50;
+		break;
+	case 2:
+		hp_max = 100;
+		break;
+	case 3:
+		hp_max = 150;
+		break;
+	case 4:
+		hp_max = 300;
+		shootCooldownTick = 10;
+		break;
+	case 5:
+		hp_max = 900;
+		shootCooldownTick = 5;
+		break;
+}
+
+//health
+hp = hp_max;

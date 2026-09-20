@@ -181,18 +181,34 @@ if(isParrying)
 	}
 }
 
+
+if (timerI >= 0){
+	timerI --;
+	if ((timerI mod 4) == 0){
+		sprite_index = sPlayer_Dash;
+	}else{
+		sprite_index = sPlayer;
+	}
+}else{
+	invincible = false;
+}
 image_angle = toMouseDirection+90;
 //Death code
-if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBullets) || place_meeting(x, y, oBoss) || place_meeting(x, y, oTorpedo))
+if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBoss) ||  place_meeting(x, y, oBullets) || place_meeting(x, y, oTorpedo))
 {
 	//show_debug_message("ahh")
+	if(!invincible){
+		hp --;
+		timerI = 25;
+		invincible = true;
+	}
 	death();
 }
 
 
 function death()
 {
-	if(!invincible)
+	if(hp == 0)
 	{
 		//put death animations and other things here
 		audio_stop_all()

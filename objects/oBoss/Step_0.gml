@@ -18,7 +18,17 @@ function shoot(angle, ammo){
 	newBullet.direction=angle
 }
 
-
+function shootMany(amount, ammo, shootDirection){
+	if(amount mod 2 == 1){
+		numOfShot = int64(amount / 2) + 1;
+	}else{
+		numOfShot = amount / 2;
+	}
+	shootOffset = 90 / numOfShot;
+	for(i = 0; i < amount; i++){
+		shoot(shootDirection - 90 + shootOffset * (i + 1), ammo);
+	}
+}
 
 
 
@@ -54,7 +64,7 @@ function charge(d){
 			directionToTarget = point_direction(x,y,d.x,d.y);
 		}
 	}else{
-		speed = bossSpeed*10;
+		speed = bossSpeed*15;
 		direction = directionToTarget;
 		traveledDistance += speed;
 		ChargeSoundPlay = true;
@@ -75,14 +85,29 @@ y = clamp(y, 64, room_height-64);
 //shoot
 if ((shootCooldownTick == timer)){
 	if(canShoot){
-		shoot(_direction, "bullet")
-		shoot(_direction-45, "bullet")
-		shoot(_direction+45, "bullet")
+		if(global.difficulty == 4){
+			shootMany(9,"bullet",_direction)
+		}else if(global.difficulty == 5){
+			shootMany(27,"bullet",_direction)
+		}else{
+			shootMany(3,"bullet",_direction)
+		}
+		
 		audio_play_sound(FireSound, 8, false, 0.2);
 		timer = 0
 		if(torpedoCharge == torpedoInterval){
-			shoot(_direction, "torpedo");
+			if(global.difficulty == 4){
+				shootMany(3,"torpedo",_direction)
+			}else if(global.difficulty == 5){
+				shootMany(9,"torpedo",_direction)
+			}else{
+				shoot(_direction, "torpedo");
+			}
+			
+			
 			torpedoCharge = 0;
+			
+				
 		}else{
 			torpedoCharge++;
 		}
@@ -93,7 +118,7 @@ if ((shootCooldownTick == timer)){
 
 
 //damage detect
-if(hp == 0){
+if(hp <= 0){
 	death();
 }
 
@@ -120,7 +145,9 @@ if(timerC > 0){
 	move()
 	canShoot = true;
 }else if(timerC < 0){
-	canShoot = false;
+	if(global.difficulty!=5){
+		canShoot = false;
+	}
 	charge(_player);
 }
 

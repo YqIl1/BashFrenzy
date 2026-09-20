@@ -4,4 +4,6 @@ if(room == Start){
 	text = "START GAME";
 }else if(room == EndingScreen){
 	text = "TRY AGAIN";
+}else if(room == VictoryScreen){
+	text = "PLAY AGAIN";
 }

@@ -1,4 +1,5 @@
 image_angle = point_direction(x,y,mouse_x,mouse_y)
+image_index = 1;
 /*
 if(x > oPlayer.x)
 {
