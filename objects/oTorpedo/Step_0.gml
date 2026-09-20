@@ -9,6 +9,7 @@ function explode(){
 	speed = 0;
 	exploding = true;
 	sprite_index = sExplosion;
+	audio_play_sound(TorpedoExplosion, 5, false);
 }
 	
 
