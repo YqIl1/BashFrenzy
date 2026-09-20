@@ -47,6 +47,7 @@
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"ChargeSound1","path":"sounds/ChargeSound1/ChargeSound1.yy",},},
     {"id":{"name":"ChargeSound2","path":"sounds/ChargeSound2/ChargeSound2.yy",},},
+    {"id":{"name":"DamageSound","path":"sounds/DamageSound/DamageSound.yy",},},
     {"id":{"name":"DashSound","path":"sounds/DashSound/DashSound.yy",},},
     {"id":{"name":"DeathSound","path":"sounds/DeathSound/DeathSound.yy",},},
     {"id":{"name":"FireSound","path":"sounds/FireSound/FireSound.yy",},},

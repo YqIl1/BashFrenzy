@@ -20,7 +20,9 @@ function death()
 		//put death animations and other things here
 		speed = 0;
 		audio_stop_all()
+		audio_play_sound(DeathSound, 10, false);
 		dead = true;
+		global.pause = true;
 		global.pause = true;
 		timerD = 60;
 	}
@@ -241,6 +243,7 @@ if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBoss) ||  place_meeting(
 	//show_debug_message("ahh")
 	if(!invincible){
 		hp = place_meeting(x, y, oTorpedo)? hp - 3: hp - 1;
+		audio_play_sound(DamageSound, 8, 0, 0.6);
 		timerI = 45;
 		invincible = true;
 	}
