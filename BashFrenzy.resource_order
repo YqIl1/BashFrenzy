@@ -24,6 +24,7 @@
     {"name":"sBullet","order":2,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sButton","order":12,"path":"sprites/sButton/sButton.yy",},
     {"name":"sExplosion","order":11,"path":"sprites/sExplosion/sExplosion.yy",},
+    {"name":"sPlayer_Dash","order":14,"path":"sprites/sPlayer_Dash/sPlayer_Dash.yy",},
     {"name":"sPlayer","order":9,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"sPlayerSwing","order":8,"path":"sprites/sPlayerSwing/sPlayerSwing.yy",},
     {"name":"sSpikes","order":1,"path":"sprites/sSpikes/sSpikes.yy",},

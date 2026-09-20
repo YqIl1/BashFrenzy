@@ -1,3 +1,3 @@
 
 direction = irandom_range(90,270);
-speed = 4;
+speed = 5;

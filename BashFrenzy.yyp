@@ -20,7 +20,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"BashFrenzy",
   "resources":[
@@ -53,6 +53,7 @@
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},},
+    {"id":{"name":"sPlayer_Dash","path":"sprites/sPlayer_Dash/sPlayer_Dash.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sPlayerPlaceholder","path":"sprites/sPlayerPlaceholder/sPlayerPlaceholder.yy",},},
     {"id":{"name":"sPlayerSwing","path":"sprites/sPlayerSwing/sPlayerSwing.yy",},},

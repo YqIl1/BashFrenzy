@@ -82,15 +82,24 @@ if((keyboard_check(ord("X")) || keyboard_check(ord("K"))|| mouse_check_button(mb
 	speed = playerSpeed * 2.5;
 }
 
-if(isDashing && timer < 3)
-{
-	speed = 0;
-}
 
-if(isDashing && timer < 0)
+//Dash animation
+if(isDashing)
 {
-	invincible = false;
-	isDashing = false;
+	//dashing animation
+	sprite_index = sPlayer_Dash;
+	//dashing timers
+	if(timer < 3)
+	{
+		speed = 0;
+	}
+
+	if(timer < 0)
+	{
+		invincible = false;
+		sprite_index = sPlayer;
+		isDashing = false;
+	}
 }
 
 //Timer
@@ -174,7 +183,7 @@ if(isParrying)
 
 image_angle = toMouseDirection+90;
 //Death code
-if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBullets) || place_meeting(x, y, oBoss))
+if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBullets) || place_meeting(x, y, oBoss) || place_meeting(x, y, oTorpedo))
 {
 	//show_debug_message("ahh")
 	death();

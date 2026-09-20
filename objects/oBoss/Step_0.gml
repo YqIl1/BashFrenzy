@@ -80,7 +80,7 @@ if ((shootCooldownTick == timer)){
 		shoot(_direction+45, "bullet")
 		audio_play_sound(FireSound, 8, false, 0.2);
 		timer = 0
-		if(torpedoCharge == 2){
+		if(torpedoCharge == torpedoInterval){
 			shoot(_direction, "torpedo");
 			torpedoCharge = 0;
 		}else{

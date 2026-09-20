@@ -5,12 +5,13 @@ shootCooldownTick = shootCooldown * 60;
 timer = 0;
 canShoot = true;
 torpedoCharge = 0;
+torpedoInterval = 3;
 
 //movement related
 directionChangeCooldown = 2;
 directionChangeCooldownTick = directionChangeCooldown * 60;
 timerM = 0
-bossSpeed = 3;
+bossSpeed = 2;
 
 direction = 11;
 speed = bossSpeed;
