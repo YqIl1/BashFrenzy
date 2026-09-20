@@ -182,6 +182,7 @@ if(timerC > 0){
 //victory place, boss death
 function death(){
 	//have animation and stuff
+	audio_stop_all()
 	audio_play_sound(TankDeathSound, 8, false);
 	timerE = 360;
 	dead = true;
