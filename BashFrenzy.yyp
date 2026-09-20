@@ -20,7 +20,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"BashFrenzy",
   "resources":[
@@ -50,9 +50,8 @@
     {"id":{"name":"DamageSound","path":"sounds/DamageSound/DamageSound.yy",},},
     {"id":{"name":"DashSound","path":"sounds/DashSound/DashSound.yy",},},
     {"id":{"name":"DeathSound","path":"sounds/DeathSound/DeathSound.yy",},},
-    {"id":{"name":"dova_mary_only_knows_MainTheme","path":"sounds/dova_mary_only_knows_MainTheme/dova_mary_only_knows_MainTheme.yy",},},
     {"id":{"name":"FireSound","path":"sounds/FireSound/FireSound.yy",},},
-    {"id":{"name":"MainTheme","path":"sounds/MainTheme/MainTheme.yy",},},
+    {"id":{"name":"MainMusic","path":"sounds/MainMusic/MainMusic.yy",},},
     {"id":{"name":"ParrySound","path":"sounds/ParrySound/ParrySound.yy",},},
     {"id":{"name":"SlashSound","path":"sounds/SlashSound/SlashSound.yy",},},
     {"id":{"name":"TankDeathSound","path":"sounds/TankDeathSound/TankDeathSound.yy",},},
