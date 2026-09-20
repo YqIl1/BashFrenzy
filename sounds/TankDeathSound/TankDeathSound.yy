@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"SlashSound",
+  "%Name":"TankDeathSound",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.39183673,
+  "duration":2.9040136,
   "exportDir":"",
-  "name":"SlashSound",
+  "name":"TankDeathSound",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SlashSound.mp3",
+  "soundFile":"TankDeathSound.mp3",
   "volume":1.0,
 }
