@@ -20,7 +20,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"BashFrenzy",
   "resources":[
@@ -29,6 +29,7 @@
     {"id":{"name":"oBossTurret","path":"objects/oBossTurret/oBossTurret.yy",},},
     {"id":{"name":"oBullets","path":"objects/oBullets/oBullets.yy",},},
     {"id":{"name":"oCooldown","path":"objects/oCooldown/oCooldown.yy",},},
+    {"id":{"name":"oDarknessFading","path":"objects/oDarknessFading/oDarknessFading.yy",},},
     {"id":{"name":"oDifficulty","path":"objects/oDifficulty/oDifficulty.yy",},},
     {"id":{"name":"oEndingScreen","path":"objects/oEndingScreen/oEndingScreen.yy",},},
     {"id":{"name":"oExplosion","path":"objects/oExplosion/oExplosion.yy",},},
@@ -63,6 +64,7 @@
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"sConfettiExplosion","path":"sprites/sConfettiExplosion/sConfettiExplosion.yy",},},
+    {"id":{"name":"sDarknessMyOldFriend","path":"sprites/sDarknessMyOldFriend/sDarknessMyOldFriend.yy",},},
     {"id":{"name":"sDeath","path":"sprites/sDeath/sDeath.yy",},},
     {"id":{"name":"sEndingHospitalScreen","path":"sprites/sEndingHospitalScreen/sEndingHospitalScreen.yy",},},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},},

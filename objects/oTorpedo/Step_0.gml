@@ -4,6 +4,10 @@ if(global.pause){
 }else{
 	speed = torpedoSpeed;
 }
+
+if(oPlayer.dead || oBoss.dead){
+	instance_destroy(self)
+}
 	
 function explode(){
 	speed = 0;
