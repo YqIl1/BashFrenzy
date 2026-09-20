@@ -23,7 +23,13 @@ function death()
 	}
 }
 
+if(keyboard_check_pressed(vk_escape)){
+	global.pause = !global.pause;
+}
 
+if(global.pause){
+	image_speed = 0;
+}
 
 if(!global.pause)
 {
