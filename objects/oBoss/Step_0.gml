@@ -170,6 +170,7 @@ if(timerC > 0){
 	else
 	{
 		room_goto(VictoryScreen);
+		audio_play_sound(YaySound, 10, false, 2);
 	}
 	
 }
@@ -180,8 +181,8 @@ function death(){
 	audio_play_sound(TankDeathSound, 8, false);
 	timerE = 180;
 	dead = true;
-	room_goto(VictoryScreen)
-	audio_play_sound(YaySound, 10, false, 2);
+	//room_goto(VictoryScreen)
+
 
 
 	

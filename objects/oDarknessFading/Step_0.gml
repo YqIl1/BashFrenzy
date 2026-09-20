@@ -1,2 +1,2 @@
-image_alpha-= 0.001;
+image_alpha-= 0.03;
 depth = -1000;
