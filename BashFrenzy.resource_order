@@ -10,6 +10,7 @@
     {"name":"oExplosion","order":12,"path":"objects/oExplosion/oExplosion.yy",},
     {"name":"oHealthBar","order":7,"path":"objects/oHealthBar/oHealthBar.yy",},
     {"name":"oKeybinds","order":11,"path":"objects/oKeybinds/oKeybinds.yy",},
+    {"name":"oPause","order":13,"path":"objects/oPause/oPause.yy",},
     {"name":"oSpikes","order":3,"path":"objects/oSpikes/oSpikes.yy",},
     {"name":"oStart","order":9,"path":"objects/oStart/oStart.yy",},
     {"name":"oTorpedo","order":6,"path":"objects/oTorpedo/oTorpedo.yy",},
