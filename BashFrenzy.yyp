@@ -52,6 +52,7 @@
     {"id":{"name":"DeathSound","path":"sounds/DeathSound/DeathSound.yy",},},
     {"id":{"name":"FireSound","path":"sounds/FireSound/FireSound.yy",},},
     {"id":{"name":"MainMusic","path":"sounds/MainMusic/MainMusic.yy",},},
+    {"id":{"name":"MouseclickSound","path":"sounds/MouseclickSound/MouseclickSound.yy",},},
     {"id":{"name":"ParrySound","path":"sounds/ParrySound/ParrySound.yy",},},
     {"id":{"name":"SlashSound","path":"sounds/SlashSound/SlashSound.yy",},},
     {"id":{"name":"TankDeathSound","path":"sounds/TankDeathSound/TankDeathSound.yy",},},
