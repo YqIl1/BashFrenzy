@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sExplosion",
-    "path":"sprites/sExplosion/sExplosion.yy",
+    "name":"sConfettiExplosion",
+    "path":"sprites/sConfettiExplosion/sConfettiExplosion.yy",
   },
   "spriteMaskId":null,
   "visible":true,
