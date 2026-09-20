@@ -33,6 +33,7 @@
     {"name":"sbatAnimation","order":6,"path":"sprites/sbatAnimation/sbatAnimation.yy",},
     {"name":"sBatIdle","order":4,"path":"sprites/sBatIdle/sBatIdle.yy",},
     {"name":"sBossBase","order":17,"path":"sprites/sBossBase/sBossBase.yy",},
+    {"name":"sBossBaseWhite","order":22,"path":"sprites/sBossBaseWhite/sBossBaseWhite.yy",},
     {"name":"sBossPlaceholder","order":5,"path":"sprites/sBossPlaceholder/sBossPlaceholder.yy",},
     {"name":"sBossTurret","order":16,"path":"sprites/sBossTurret/sBossTurret.yy",},
     {"name":"sBullet","order":2,"path":"sprites/sBullet/sBullet.yy",},

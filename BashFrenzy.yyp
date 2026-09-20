@@ -60,6 +60,7 @@
     {"id":{"name":"sbatAnimation","path":"sprites/sbatAnimation/sbatAnimation.yy",},},
     {"id":{"name":"sBatIdle","path":"sprites/sBatIdle/sBatIdle.yy",},},
     {"id":{"name":"sBossBase","path":"sprites/sBossBase/sBossBase.yy",},},
+    {"id":{"name":"sBossBaseWhite","path":"sprites/sBossBaseWhite/sBossBaseWhite.yy",},},
     {"id":{"name":"sBossPlaceholder","path":"sprites/sBossPlaceholder/sBossPlaceholder.yy",},},
     {"id":{"name":"sBossTurret","path":"sprites/sBossTurret/sBossTurret.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},

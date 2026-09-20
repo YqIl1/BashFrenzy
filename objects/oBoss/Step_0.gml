@@ -161,8 +161,12 @@ if(timerC > 0){
 
 }else{
 	speed = 0;
-	
-	if(timerE > 0)
+	if(timerE mod 9 = 0){
+			sprite_index = sBossBaseWhite
+		}else{
+			sprite_index = sBossBase
+		}
+	if(timerE > 0 && timerE > 180)
 	{
 		var e = instance_create_layer(irandom_range(bbox_left,bbox_right), irandom_range(bbox_top,bbox_bottom), "Instances", oExplosion);
 		e.depth -= 1000;
@@ -179,7 +183,7 @@ if(timerC > 0){
 function death(){
 	//have animation and stuff
 	audio_play_sound(TankDeathSound, 8, false);
-	timerE = 180;
+	timerE = 360;
 	dead = true;
 	//room_goto(VictoryScreen)
 
