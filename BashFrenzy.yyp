@@ -30,6 +30,7 @@
     {"id":{"name":"oBullets","path":"objects/oBullets/oBullets.yy",},},
     {"id":{"name":"oCooldown","path":"objects/oCooldown/oCooldown.yy",},},
     {"id":{"name":"oDifficulty","path":"objects/oDifficulty/oDifficulty.yy",},},
+    {"id":{"name":"oExplosion","path":"objects/oExplosion/oExplosion.yy",},},
     {"id":{"name":"oHealthBar","path":"objects/oHealthBar/oHealthBar.yy",},},
     {"id":{"name":"oKeybinds","path":"objects/oKeybinds/oKeybinds.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},

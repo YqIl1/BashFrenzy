@@ -23,8 +23,9 @@ function death()
 	}
 }
 
-if(keyboard_check_pressed(vk_escape)){
+if(keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P"))){
 	global.pause = !global.pause;
+	speed = 0;
 }
 
 if(global.pause){
@@ -219,7 +220,7 @@ if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBoss) ||  place_meeting(
 {
 	//show_debug_message("ahh")
 	if(!invincible){
-		hp = place_meeting(x, y, oTorpedo)? hp - 3: hp - 1; 
+		hp = place_meeting(x, y, oTorpedo)? hp - 3: hp - 1;
 		timerI = 45;
 		invincible = true;
 	}
