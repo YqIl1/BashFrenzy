@@ -50,3 +50,6 @@ switch(global.difficulty){
 
 //health
 hp = hp_max;
+
+dead = false;
+timerE = 0;

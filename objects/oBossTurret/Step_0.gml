@@ -1,3 +1,6 @@
+if(!oBoss.dead){
+
+
 x = oBoss.x;
 y = oBoss.y;
 if(oBoss.canShoot){
@@ -6,3 +9,8 @@ if(oBoss.canShoot){
 	direction +=30;
 }
 image_angle = direction
+
+}else{
+	image_angle += turnSpeed;
+	turnSpeed++;
+}

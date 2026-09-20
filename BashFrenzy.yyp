@@ -20,7 +20,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"BashFrenzy",
   "resources":[
@@ -30,6 +30,7 @@
     {"id":{"name":"oBullets","path":"objects/oBullets/oBullets.yy",},},
     {"id":{"name":"oCooldown","path":"objects/oCooldown/oCooldown.yy",},},
     {"id":{"name":"oDifficulty","path":"objects/oDifficulty/oDifficulty.yy",},},
+    {"id":{"name":"oExplosion","path":"objects/oExplosion/oExplosion.yy",},},
     {"id":{"name":"oHealthBar","path":"objects/oHealthBar/oHealthBar.yy",},},
     {"id":{"name":"oKeybinds","path":"objects/oKeybinds/oKeybinds.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"sBossTurret","path":"sprites/sBossTurret/sBossTurret.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
+    {"id":{"name":"sConfettiExplosion","path":"sprites/sConfettiExplosion/sConfettiExplosion.yy",},},
     {"id":{"name":"sDeath","path":"sprites/sDeath/sDeath.yy",},},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},},
     {"id":{"name":"sHeart","path":"sprites/sHeart/sHeart.yy",},},

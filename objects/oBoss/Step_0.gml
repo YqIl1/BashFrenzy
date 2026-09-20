@@ -1,3 +1,6 @@
+if(!global.pause){
+
+if(!dead){
 
 var _player = instance_nearest(x,y,oPlayer)
 var _direction = point_direction(x, y, _player.x, _player.y)
@@ -80,7 +83,6 @@ function death(){
 	audio_play_sound(YaySound, 10, false, 2);
 	audio_play_sound(TankExplosionSound, 8, false);
 }
-
 	
 
 
@@ -158,7 +160,33 @@ if(timerC > 0){
 }
 
 
+}else{
+	speed = 0;
+	
+	if(timerE > 0){
+		var e = instance_create_layer(irandom_range(bbox_left,bbox_right), irandom_range(bbox_top,bbox_bottom), "Instances", oExplosion);
+		e.depth -= 1000;
+	}else{
 
+	}
+	
+}
+
+//victory place, boss death
+function death(){
+	//have animation and stuff
+	timerE = 180;
+	dead = true;
+
+	
+	//room_goto(VictoryScreen)
+}
+
+if(timerE >= 0) timerE--;
+
+}else{
+	speed = 0;
+}
 
 
 
