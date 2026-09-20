@@ -48,6 +48,7 @@
     {"id":{"name":"ChargeSound1","path":"sounds/ChargeSound1/ChargeSound1.yy",},},
     {"id":{"name":"ChargeSound2","path":"sounds/ChargeSound2/ChargeSound2.yy",},},
     {"id":{"name":"DashSound","path":"sounds/DashSound/DashSound.yy",},},
+    {"id":{"name":"DeathSound","path":"sounds/DeathSound/DeathSound.yy",},},
     {"id":{"name":"FireSound","path":"sounds/FireSound/FireSound.yy",},},
     {"id":{"name":"ParrySound","path":"sounds/ParrySound/ParrySound.yy",},},
     {"id":{"name":"SlashSound","path":"sounds/SlashSound/SlashSound.yy",},},

@@ -121,6 +121,7 @@ if((keyboard_check(ord("X")) || keyboard_check(ord("K"))|| mouse_check_button(mb
 	isDashing = true;
 	invincible = true;
 	speed = playerSpeed * 2.5;
+	audio_play_sound(DashSound, 8, false);
 }
 
 
