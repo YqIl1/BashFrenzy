@@ -101,6 +101,7 @@ if ((shootCooldownTick == timer)){
 			}else if(global.difficulty == 5){
 				shootMany(9,"torpedo",_direction)
 			}else{
+				image_angle = direction;
 				shoot(_direction, "torpedo");
 			}
 			
@@ -143,6 +144,7 @@ if(chargeCooldownTick == timerC ){
 if(timerC > 0){
 	speed = bossSpeed
 	move()
+	image_angle = direction;
 	canShoot = true;
 }else if(timerC < 0){
 	if(global.difficulty!=5){
