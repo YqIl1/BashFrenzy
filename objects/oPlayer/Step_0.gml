@@ -18,6 +18,7 @@ function death()
 	if(hp <= 0)
 	{
 		//put death animations and other things here
+		speed = 0;
 		audio_stop_all()
 		dead = true;
 		global.pause = true;
