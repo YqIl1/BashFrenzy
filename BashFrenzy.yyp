@@ -33,6 +33,7 @@
     {"id":{"name":"oDifficulty","path":"objects/oDifficulty/oDifficulty.yy",},},
     {"id":{"name":"oEndingScreen","path":"objects/oEndingScreen/oEndingScreen.yy",},},
     {"id":{"name":"oExplosion","path":"objects/oExplosion/oExplosion.yy",},},
+    {"id":{"name":"oExplosionP","path":"objects/oExplosionP/oExplosionP.yy",},},
     {"id":{"name":"oHealthBar","path":"objects/oHealthBar/oHealthBar.yy",},},
     {"id":{"name":"oKeybinds","path":"objects/oKeybinds/oKeybinds.yy",},},
     {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},

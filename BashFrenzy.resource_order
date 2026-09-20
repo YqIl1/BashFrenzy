@@ -9,6 +9,7 @@
     {"name":"oDarknessFading","order":15,"path":"objects/oDarknessFading/oDarknessFading.yy",},
     {"name":"oDifficulty","order":10,"path":"objects/oDifficulty/oDifficulty.yy",},
     {"name":"oExplosion","order":12,"path":"objects/oExplosion/oExplosion.yy",},
+    {"name":"oExplosionP","order":16,"path":"objects/oExplosionP/oExplosionP.yy",},
     {"name":"oHealthBar","order":7,"path":"objects/oHealthBar/oHealthBar.yy",},
     {"name":"oKeybinds","order":11,"path":"objects/oKeybinds/oKeybinds.yy",},
     {"name":"oPause","order":13,"path":"objects/oPause/oPause.yy",},

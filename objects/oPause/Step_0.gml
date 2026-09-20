@@ -1,10 +1,11 @@
 if(global.pause && room = MainRoom && !oPlayer.dead){
 	visible = true;
 }else{
+	audio_resume_all()
 	visible = false;
 }
 if(visible){
-	audio_stop_all();
+	audio_pause_all();
 if(position_meeting(mouse_x,mouse_y,self)){
 	image_index = 1;
 	

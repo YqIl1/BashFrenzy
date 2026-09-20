@@ -32,7 +32,7 @@ if(dead == true && timerD <= 0){
 }else if(dead == true){
 	if((timerD mod 9) == 0){
 		show_debug_message("a")
-		var e = instance_create_layer(irandom_range(bbox_left,bbox_right), irandom_range(bbox_top,bbox_bottom), "Instances", oExplosion);
+		var e = instance_create_layer(irandom_range(bbox_left,bbox_right), irandom_range(bbox_top,bbox_bottom), "Instances", oExplosionP);
 		e.depth -= 1000;
 		
 	}

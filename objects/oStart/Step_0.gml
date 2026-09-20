@@ -4,6 +4,7 @@ if(position_meeting(mouse_x,mouse_y,self)){
 	
 	if(mouse_check_button(mb_left))
 	{
+		audio_stop_all()
 		audio_play_sound(MouseclickSound, 1, 0)
 		global.pause = false;
 		room_goto(MainRoom);
