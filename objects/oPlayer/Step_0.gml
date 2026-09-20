@@ -22,7 +22,7 @@ function death()
 		audio_stop_all()
 		dead = true;
 		global.pause = true;
-		timerD = 360;
+		timerD = 60;
 	}
 }
 if(dead == true && timerD <= 0){
