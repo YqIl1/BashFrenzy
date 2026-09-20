@@ -34,6 +34,7 @@
     {"name":"sBossTurret","order":16,"path":"sprites/sBossTurret/sBossTurret.yy",},
     {"name":"sBullet","order":2,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sButton","order":12,"path":"sprites/sButton/sButton.yy",},
+    {"name":"sConfettiExplosion","order":19,"path":"sprites/sConfettiExplosion/sConfettiExplosion.yy",},
     {"name":"sDeath","order":18,"path":"sprites/sDeath/sDeath.yy",},
     {"name":"sExplosion","order":11,"path":"sprites/sExplosion/sExplosion.yy",},
     {"name":"sHeart","order":14,"path":"sprites/sHeart/sHeart.yy",},
