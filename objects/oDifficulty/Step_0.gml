@@ -1,5 +1,6 @@
 if (mouse_check_button_pressed(mb_left)) {
     if (position_meeting(mouse_x, mouse_y, id)) {
+		audio_play_sound(MouseclickSound, 1, 0)
         menuOpen = !menuOpen;
 		if(oKeybinds.menuOpen){
 			oKeybinds.menuOpen = !oKeybinds.menuOpen
@@ -13,6 +14,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			itemTop = bbox_bottom + ((i - 3) * buttonHeight);
 			itemBottom = itemTop + buttonHeight;
             if (mouse_x >= menuLeft && mouse_x <= menuRight && mouse_y >= itemTop && mouse_y <= itemBottom) {
+				audio_play_sound(MouseclickSound, 1, 0)
 				show_debug_message("Clicked: " + options[i]);
 				switch(i){
 					case 0:
