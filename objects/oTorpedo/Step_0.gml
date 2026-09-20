@@ -13,7 +13,6 @@ function explode(){
 	speed = 0;
 	exploding = true;
 	sprite_index = sExplosion;
-	audio_play_sound(TorpedoExplosion, 5, false);
 }
 	
 
@@ -62,6 +61,7 @@ if(place_meeting(x, y, oBoss)&& !canDamagePlayer)
 	if(!exploding)
 	{
 	oBoss.hp -= 5;
+	audio_play_sound(TorpedoExplosion, 5, false);
 	}
 	explode();
 }
