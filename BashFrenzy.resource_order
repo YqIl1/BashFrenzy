@@ -21,6 +21,7 @@
     {"name":"TankDeathSound","order":8,"path":"sounds/TankDeathSound/TankDeathSound.yy",},
     {"name":"TankHitSound","order":6,"path":"sounds/TankHitSound/TankHitSound.yy",},
     {"name":"TorpedoExplosion","order":7,"path":"sounds/TorpedoExplosion/TorpedoExplosion.yy",},
+    {"name":"YaySound","order":10,"path":"sounds/YaySound/YaySound.yy",},
     {"name":"sBackground","order":3,"path":"sprites/sBackground/sBackground.yy",},
     {"name":"sbatAnimation","order":6,"path":"sprites/sbatAnimation/sbatAnimation.yy",},
     {"name":"sBatIdle","order":4,"path":"sprites/sBatIdle/sBatIdle.yy",},

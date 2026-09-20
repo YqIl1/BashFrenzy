@@ -50,6 +50,7 @@
     {"id":{"name":"TankDeathSound","path":"sounds/TankDeathSound/TankDeathSound.yy",},},
     {"id":{"name":"TankHitSound","path":"sounds/TankHitSound/TankHitSound.yy",},},
     {"id":{"name":"TorpedoExplosion","path":"sounds/TorpedoExplosion/TorpedoExplosion.yy",},},
+    {"id":{"name":"YaySound","path":"sounds/YaySound/YaySound.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sbatAnimation","path":"sprites/sbatAnimation/sbatAnimation.yy",},},
     {"id":{"name":"sBatIdle","path":"sprites/sBatIdle/sBatIdle.yy",},},

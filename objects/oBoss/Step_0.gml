@@ -77,6 +77,8 @@ function charge(d){
 function death(){
 	//have animation and stuff
 	room_goto(VictoryScreen)
+	audio_play_sound(YaySound, 10, false, 2);
+	audio_play_sound(TankExplosionSound, 8, false);
 }
 
 	
