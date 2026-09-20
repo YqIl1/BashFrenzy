@@ -3,15 +3,17 @@ var _player = instance_nearest(x,y,oPlayer)
 var _direction = point_direction(x, y, _player.x, _player.y)
 
 function shoot(angle, ammo){
+	var _targetX = x+lengthdir_x(100,point_direction(x,y,oPlayer.x,oPlayer.y));
+	var _targetY = y+lengthdir_y(100,point_direction(x,y,oPlayer.x,oPlayer.y));
 	switch (ammo){
 		case "bullet":
-			var newBullet = instance_create_layer(self.x, self.y, "Instances", oBullets);
+			var newBullet = instance_create_layer(_targetX, _targetY, "Instances", oBullets);
 			break;
 		case "torpedo":
-			var newBullet = instance_create_layer(self.x, self.y, "Instances", oTorpedo);
+			var newBullet = instance_create_layer(_targetX, _targetY, "Instances", oTorpedo);
 			break;
 		default:
-			var newBullet = instance_create_layer(self.x, self.y, "Instances", oBullets);
+			var newBullet = instance_create_layer(_targetX, _targetY, "Instances", oBullets);
 			show_debug_message("unknown type")
 			break;
 	}		
