@@ -19,13 +19,31 @@ function death()
 	{
 		//put death animations and other things here
 		audio_stop_all()
-		room_goto(EndingScreen)
+		dead = true;
+		global.pause = true;
+		timerD = 360;
 	}
 }
+if(dead == true && timerD <= 0){
+	room_goto(EndingScreen);
+}else if(dead == true){
+	if((timerD mod 9) == 0){
+		show_debug_message("a")
+		var e = instance_create_layer(irandom_range(bbox_left,bbox_right), irandom_range(bbox_top,bbox_bottom), "Instances", oExplosion);
+		e.depth -= 1000;
+		
+	}
+	timerD --
+	
+}
 
+
+if(!oPlayer.dead && !oBoss.dead)
+{
 if(keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P"))){
 	global.pause = !global.pause;
 	speed = 0;
+}
 }
 
 if(global.pause){

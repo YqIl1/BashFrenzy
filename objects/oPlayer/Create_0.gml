@@ -8,6 +8,8 @@ image_speed = 1;
 timer = 0;
 parry = instance_create_layer(x,y, layer, oBat);
 parry.visible = false;
+dead = false;
+timerD = 0;
 
 //setting up the difficulty
 switch(global.difficulty){

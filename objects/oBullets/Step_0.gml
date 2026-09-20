@@ -3,6 +3,12 @@ if(global.pause){
 }else{
 	speed = bulletSpeed;
 }
+
+
+if(oPlayer.dead || oBoss.dead){
+	instance_destroy(self)
+}
+
 move_bounce_solid(1)
 image_angle = direction+180;
 //die on hitting spike

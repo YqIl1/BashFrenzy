@@ -1,4 +1,4 @@
-if(global.pause && room = MainRoom){
+if(global.pause && room = MainRoom && !oPlayer.dead){
 	visible = true;
 }else{
 	visible = false;
