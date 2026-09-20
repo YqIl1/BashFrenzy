@@ -199,7 +199,7 @@ if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBoss) ||  place_meeting(
 	//show_debug_message("ahh")
 	if(!invincible){
 		hp --;
-		timerI = 25;
+		timerI = 45;
 		invincible = true;
 	}
 	death();
