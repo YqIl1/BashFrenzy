@@ -13,6 +13,21 @@ if you want to test the game without dying
 */
 
 
+function death()
+{
+	if(hp <= 0)
+	{
+		//put death animations and other things here
+		audio_stop_all()
+		room_goto(EndingScreen)
+	}
+}
+
+
+
+if(!global.pause)
+{
+
 x = clamp(x, 0, room_width); 
 y = clamp(y, 0, room_height); 
 
@@ -205,14 +220,4 @@ if(place_meeting(x, y, oSpikes) || place_meeting(x, y, oBoss) ||  place_meeting(
 	death();
 }
 
-
-function death()
-{
-	if(hp <= 0)
-	{
-		//put death animations and other things here
-		audio_stop_all()
-		room_goto(EndingScreen)
-	}
 }
-

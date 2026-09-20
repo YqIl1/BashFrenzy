@@ -1,3 +1,3 @@
 
 direction = irandom_range(90,270);
-speed = 5;
+bulletSpeed = 5;

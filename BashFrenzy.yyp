@@ -56,6 +56,7 @@
     {"id":{"name":"sBossTurret","path":"sprites/sBossTurret/sBossTurret.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
+    {"id":{"name":"sDeath","path":"sprites/sDeath/sDeath.yy",},},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},},
     {"id":{"name":"sHeart","path":"sprites/sHeart/sHeart.yy",},},
     {"id":{"name":"sPlayer_Dash","path":"sprites/sPlayer_Dash/sPlayer_Dash.yy",},},

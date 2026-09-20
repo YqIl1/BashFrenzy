@@ -8,3 +8,4 @@ if(room == Start){
 }else if(room == VictoryScreen){
 	text = "PLAY AGAIN";
 }
+global.pause = true;

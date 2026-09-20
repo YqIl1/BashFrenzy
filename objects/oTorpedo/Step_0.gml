@@ -1,4 +1,10 @@
 //Make this object explode when it reaches a wall or player - switch the sprite to explosion
+if(global.pause){
+	speed = 0;
+}else{
+	speed = torpedoSpeed;
+}
+	
 function explode(){
 	speed = 0;
 	exploding = true;
@@ -16,10 +22,8 @@ if(exploding == false)
 	{
 		if(place_meeting(x, y, oBat) && oBat.visible)
 		{
-			direction = point_direction(x, y, oPlayer.x, oPlayer.y);
+			direction = point_direction(oPlayer.x, oPlayer.y, x, y);
 			image_angle= direction + 180;
-			image_xscale *= -1;
-			speed *= -1;
 			canDamagePlayer = false;
 		
 		}

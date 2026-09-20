@@ -2,5 +2,5 @@
 canDamagePlayer = true;
 depth -= 1000;
 direction = irandom_range(90,270);
-speed = 4;
+torpedoSpeed = 4;
 timer = 0;

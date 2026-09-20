@@ -4,6 +4,7 @@ if(position_meeting(mouse_x,mouse_y,self)){
 	
 	if(mouse_check_button(mb_left))
 	{
+		global.pause = false;
 		room_goto(MainRoom);
 	}
 }else{
